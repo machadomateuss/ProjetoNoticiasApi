@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Catador de Notícias</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>NEWS</h1>
+
+        <div class="selectionContainer">
+            <label for="category">Escolha uma categoria :</label>
+            <select id="category">
+                <option value="science">Ciência</option>
+                <option value="entertainment">Entretenimento</option>
+                <option value="sports">Esportes</option>
+                <option value="general">Geral</option>
+                <option value="business">Negócios</option>
+                <option value="health">Saúde</option>
+                <option value="technology">Tecnologia</option>
+            </select>
+            <button id="fetchCategory">Pesquisar</button>
+        </div>
+
+        <div class="searchContainer">
+            <input type="text" id="searchKeyword" placeholder="Pesquisar por notícias...">
+            <button onclick="fetchNews(true)">Pesquisar por Notícias</button>
+        </div>
+        <div id="newsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
